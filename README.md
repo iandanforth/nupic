@@ -68,12 +68,13 @@ Important notes:
 
 #### Configure and generate build files:
 
+    mkdir $REPOSITORY/build_system
     cd $REPOSITORY/build_system
     cmake $REPOSITORY
 
 #### Build:
 
-    cd $REPOSITORY/build_system
+    cd $REPOSITORY/build
     make -j3
     
 > **Note**: -j3 option specify '3' as the maximum number of parallel jobs/threads that Make will use during the build in order to gain speed. However, you can increase this number depending your CPU.
